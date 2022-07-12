@@ -1,0 +1,56 @@
+.post p {
+  @apply w-full;
+}
+
+.post p.title {
+  @apply font-medium;
+}
+
+.post > p:not(.title) {
+  @apply font-normal text-sm;
+}
+
+.post > p.user::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 1px;
+  background: #e0e0e0;
+  margin: 0.5rem 0;
+}
+
+.post button {
+  @apply text-white font-medium py-2;
+}
+
+.post > button.show-comments {
+  @apply bg-blue-500 hover:bg-blue-700 w-36 text-sm;
+}
+
+.post > button.upload-comment {
+  @apply bg-purple-500 hover:bg-purple-700 w-32 text-sm mt-2;
+}
+
+.wrapper.hide {
+  animation-name: fade;
+  animation-duration: 250ms;
+  animation-fill-mode: forwards;
+  animation-play-state: running;
+  animation-timing-function: linear;
+}
+
+
+@keyframes fade {
+  from {
+    @apply h-auto opacity-100;
+  }
+  to {
+    @apply h-0 opacity-0;
+  }
+}
+
+@media (max-width: 576px) {
+  img.post {
+    width: 14rem;
+  }
+}

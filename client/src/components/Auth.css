@@ -1,0 +1,4 @@
+.auth button {
+  @apply my-2 bg-purple-700 text-white py-1 px-3 hover:bg-purple-900 
+  w-[90%] mx-auto;
+}

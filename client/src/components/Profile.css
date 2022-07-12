@@ -1,0 +1,24 @@
+.profile p {
+  @apply font-medium;
+}
+
+.profile p:not(#avatar) {
+  @apply w-full;
+}
+
+.profile button {
+  @apply bg-green-600 hover:bg-green-800 text-white font-bold py-2 px-4
+  w-48 mt-6;
+}
+
+#edit {
+  @apply bg-purple-600 hover:bg-purple-800;
+}
+
+#upload {
+  @apply bg-blue-600 hover:bg-blue-800 m-0;
+}
+
+#remove-avatar {
+  @apply bg-red-600 hover:bg-red-800;
+}

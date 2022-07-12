@@ -1,0 +1,28 @@
+header {
+  background-image: url("../assets/graph-image.png");
+  background-blend-mode: soft-light;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.header button {
+  @apply bg-purple-700 text-white font-medium py-1 px-3 w-20 md:w-28
+  hover:bg-purple-900 mx-auto;
+}
+
+.dropdown > p {
+  @apply text-base text-purple-700 hover:bg-gray-200 w-full pr-8 py-2 pl-4
+  cursor-pointer;
+}
+
+.dropdown > p:first-child {
+  @apply rounded-t-md;
+}
+
+.dropdown > p:last-child {
+  @apply rounded-b-md;
+}
+
+.inner-container {
+  background-color: rgba(0,0,0, 0.6);
+}

@@ -1,0 +1,35 @@
+p.user-info {
+  @apply w-auto;
+}
+
+.info {
+  @apply text-blue-800 font-medium;
+}
+
+.info-section {
+  @apply px-20;
+}
+
+.info-section > * {
+  width: 25%;
+}
+
+.info-section > img {
+  @apply w-20 h-20 md:w-32 md:h-32 object-cover;
+  border-radius: 50%;
+}
+
+.info-section > p {
+  @apply hover:bg-gray-100 self-stretch flex justify-center items-center 
+  w-full gap-2 rounded-xl;
+}
+
+@media (max-width: 400px) {
+  .info-section > p {
+    font-size: 0.9rem !important;
+  }
+
+  .info-section {
+    @apply flex-wrap;
+  }
+}

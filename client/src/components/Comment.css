@@ -1,0 +1,7 @@
+.comment > p:not(.title) {
+  @apply font-normal text-xs;
+}
+
+.comment > p.title {
+  @apply text-sm;
+}
